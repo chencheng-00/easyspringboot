@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>修改学生信息</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <script type="text/javascript" th:src="@{/js/jquery-3.1.1.min.js}"></script>
+</head>
+<body style="padding:8px;">
+    <h3 class="title">学生信息</h3>
+    <form th:action="@{/student/update}" method="post" th:object="${student}">
+        <input type="hidden" name="_method" value="PUT"/>
+        <input type="hidden" name="sid" th:value="*{sid}">
+        <div>
+            <span>具体信息:</span>
+            姓名：<input type="text" name="sname" th:value="*{sname}" placeholder="姓名">
+            密码：<input type="text" name="spassword" th:value="*{spassword}" placeholder="密码">
+            年龄：<input type="text" name="sage" th:value="*{sage}" placeholder="年龄">
+        </div>
+        <div>
+            <input type="submit" value=" 确定 "/>
+        </div>
+    </form>
+</body>
+</html>
