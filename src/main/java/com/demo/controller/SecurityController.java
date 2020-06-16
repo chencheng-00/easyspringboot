@@ -8,13 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * SecurityController
- *
- * @author xiaoze
- * @date 2018/6/3
- *
- */
 @Controller
 @RequestMapping("/security")
 public class SecurityController {

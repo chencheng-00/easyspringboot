@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface StudentService {
     /**
-     * 新增一条课程类型记录
+     * 新增一条学生信息记录
      *
      * @param student
      *
@@ -14,7 +14,7 @@ public interface StudentService {
     void addStudent(Student student);
 
     /**
-     * 删除一条课程类型记录
+     * 删除一条学生信息记录
      *
      * @param Id
      *
@@ -22,7 +22,7 @@ public interface StudentService {
     void removeStudent(Integer Id);
 
     /**
-     * 更新一条课程类型记录
+     * 更新一条学生信息记录
      *
      * @param student
      *
@@ -30,7 +30,7 @@ public interface StudentService {
     void updateStudent(Student student);
 
     /**
-     * 获取一条课程类型记录
+     * 获取一条学生信息记录
      *
      * @param Id
      * @return CourseType
@@ -39,7 +39,7 @@ public interface StudentService {
    Student getStudentById(Integer Id);
 
     /**
-     *  获取所有课程类型记录
+     *  获取所有学生信息记录
      *
      * @return List
      *

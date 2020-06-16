@@ -2,13 +2,6 @@ package com.demo.service;
 
 import com.demo.entity.User;
 
-/**
- * UserService
- *
- * @author xiaoze
- * @date 2018/6/3
- *
- */
 public interface UserService {
 
     /**

@@ -8,13 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
-/**
- * User
- *
- * @author xiaoze
- * @date 2018/6/3
- *
- */
 @Component
 @Table(name="tbl_users")
 public class User implements Serializable{

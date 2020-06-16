@@ -11,13 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-/**
- * CourseTypeController
- *
- * @author xiaoze
- * @date 2018/6/3
- *
- */
+
 @Controller
 @RequestMapping("/courseType")
 public class CourseTypeController {

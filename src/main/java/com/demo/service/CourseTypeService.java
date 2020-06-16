@@ -4,13 +4,6 @@ import com.demo.entity.CourseType;
 
 import java.util.List;
 
-/**
- * CourseTypeService
- *
- * @author xiaoze
- * @date 2018/6/3
- *
- */
 public interface CourseTypeService {
 
     /**

@@ -9,11 +9,9 @@ import tk.mybatis.spring.annotation.MapperScan;
 /**
  * App
  *
- * @author xiaoze
- * @date 2018/6/3
  *
- * ComponentScan(basePackages = "xiao.ze.demo")  这里指定你要扫描的包及其子包子类
- * MapperScan("xiao.ze.demo.mapper") 扫描：该包下相应的class,主要是MyBatis的持久化类，
+ * ComponentScan(basePackages = "com.demo")  这里指定你要扫描的包及其子包子类
+ * MapperScan("com.demo.mapper") 扫描：该包下相应的class,主要是MyBatis的持久化类，
  * 这里用的是mapper的扫描，不是mybatis自身扫描
  *
  */

@@ -11,11 +11,28 @@
  Target Server Version : 50540
  File Encoding         : 65001
 
- Date: 15/06/2020 16:49:25
+ Date: 16/06/2020 09:38:29
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for message
+-- ----------------------------
+DROP TABLE IF EXISTS `message`;
+CREATE TABLE `message`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `info` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `sid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of message
+-- ----------------------------
+INSERT INTO `message` VALUES (1, '很好', 1);
+INSERT INTO `message` VALUES (2, '教务系统好卡', 20);
 
 -- ----------------------------
 -- Table structure for student
@@ -27,14 +44,13 @@ CREATE TABLE `student`  (
   `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `age` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of student
 -- ----------------------------
 INSERT INTO `student` VALUES (1, 'zhangsan', '123456', 20);
 INSERT INTO `student` VALUES (5, 'cc', '111', 11);
-INSERT INTO `student` VALUES (6, NULL, NULL, NULL);
 
 -- ----------------------------
 -- Table structure for tbl_course_type
