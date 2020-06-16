@@ -1,6 +1,5 @@
 package com.demo.service.impl;
 
-import com.demo.entity.CourseType;
 import com.demo.entity.Student;
 import com.demo.mapper.StudentMapper;
 import com.demo.service.StudentService;
@@ -30,6 +29,7 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public void updateStudent(Student student) {
         studentMapper.updateByPrimaryKey(student);
+        //自己写的代码
 
     }
 

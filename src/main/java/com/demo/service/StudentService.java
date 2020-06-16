@@ -8,7 +8,7 @@ public interface StudentService {
     /**
      * 新增一条课程类型记录
      *
-     * @param courseType
+     * @param student
      *
      */
     void addStudent(Student student);
@@ -16,7 +16,7 @@ public interface StudentService {
     /**
      * 删除一条课程类型记录
      *
-     * @param typeId
+     * @param Id
      *
      */
     void removeStudent(Integer Id);
@@ -24,7 +24,7 @@ public interface StudentService {
     /**
      * 更新一条课程类型记录
      *
-     * @param courseType
+     * @param student
      *
      */
     void updateStudent(Student student);
@@ -32,7 +32,7 @@ public interface StudentService {
     /**
      * 获取一条课程类型记录
      *
-     * @param typeId
+     * @param Id
      * @return CourseType
      *
      */

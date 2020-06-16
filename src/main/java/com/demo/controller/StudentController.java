@@ -25,7 +25,7 @@ public class StudentController {
     public String input(Map<String, Object> map) {
         map.put("student", new Student());
 
-        return "student/input_course_type";
+        return "student/input_student";
     }
 
     /**
@@ -62,7 +62,7 @@ public class StudentController {
 
         map.put("page", page);
 
-        return "student/list_course_type";
+        return "student/list_student";
     }
 
     @DeleteMapping(value="/remove/{sid}")
@@ -75,15 +75,17 @@ public class StudentController {
 
     @GetMapping(value="/preUpdate/{sid}")
     public String preUpdate(@PathVariable("sid") Integer sid, Map<String, Object> map) {
-//        System.out.println(studentService.getCourseTypeById(typeId));
+//        System.out.println(studentService.getCourseTypeById(sid));
         map.put("student", studentService.getStudentById(sid));
 
-        return "student/update_course_type";
+        return "student/update_student";
     }
 
     @PutMapping(value="/update")
     public String update(Student student) {
-        studentService.updateStudent(student);
+        System.out.println("id信息----->"+student.getSid());
+        System.out.println("新增学生的信息："+student);
+        studentService.addStudent(student);
 
         return "redirect:/student/list";
     }
